@@ -76,7 +76,7 @@ else
   AC_DEFINE(HAVE_REGEX_H, 1, [regex.h is present])
 fi
 
-AC_CHECK_FUNCS([memmove memset regcomp select socket strcasecmp strncasecmp strchr strdup strndup strrchr strstr strtol])
+AC_CHECK_FUNCS([memmove memset regcomp select socket strcasecmp strncasecmp strchr strdup strndup strrchr strstr strtol strcasestr getline])
 AC_CHECK_DECL(idevice_connection_get_fd, [AC_DEFINE([HAVE_IDEVICE_CONNECTION_GET_FD], 1, [ ])], [], [#include <libimobiledevice/libimobiledevice.h>])
 
 AC_CONFIG_FILES([Makefile src/Makefile include/Makefile examples/Makefile])
